@@ -55,46 +55,74 @@ IDE tools recommend **IntelliJ IDEA** or **WebStorm**.
 
 Formatting code with **Visual Studio Code** is not recommended and may cause some errors.
 
-Execute the following command to install Electron.
+- Execute the following command to install yarn.
 
-```
-npm install --save-dev electron
-```
-
-Execute the following command to install yarn.
-
-```
+```bash
+# npm
 npm install yarn
+
+# pnpm
+pnpm add -D yarn
 ```
 
-Enter the project directory and execute the following command to install dependencies.
+- Execute the following command to install Electron.
 
+```bash
+# npm
+npm install --save-dev electron
+
+# pnpm
+pnpm dlx yarn add -D electron
 ```
+
+- Enter the project directory and execute the following command to install dependencies.
+
+```bash
+# npm
 npm install --save-dev @electron-forge/cli
+
+# pnpm
+pnpm dlx yarn add -D @electron-forge/cli
 ```
 
-```
+```bash
+# npm
 npx electron-forge import
+
+# pnpm
+pnpm dlx yarn electron-forge import
 ```
 
-Use the following command to debug.
+- Use the following command to debug.
 
-```
+```bash
+# npm
 npm run start
+
+# pnpm
+pnpm dlx yarn start
 ```
 
 Use the following commands to compile & package.
 
 **Linux/macOS**
 
-```
+```bash
+# npm
 npm run make
+
+# pnpm
+pnpm dlx yarn make
 ```
 
 **Windows**
 
-```
+```bash
+# npm
 npm run package
+
+# pnpm
+pnpm dlx yarn package
 ```
 
 ## More Projects

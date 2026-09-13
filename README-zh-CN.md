@@ -45,46 +45,74 @@
 
 首先你需要安装 [node.js](https://nodejs.org/zh-cn/)
 
-- 执行如下命令安装 Electron
-
-```
-npm install --save-dev electron
-```
-
 - 执行如下命令安装 yarn
 
-```
+```bash
+# npm
 npm install yarn
+
+# pnpm
+pnpm add -D yarn
+```
+
+- 执行如下命令安装 Electron
+
+```bash
+# npm
+npm install --save-dev electron
+
+# pnpm
+pnpm dlx yarn add -D electron
 ```
 
 - 进入项目目录，执行如下命令安装依赖
 
-```
+```bash
+# npm
 npm install --save-dev @electron-forge/cli
+
+# pnpm
+pnpm dlx yarn add -D @electron-forge/cli
 ```
 
-```
+```bash
+# npm
 npx electron-forge import
+
+# pnpm
+pnpm dlx yarn electron-forge import
 ```
 
 - 使用如下命令进行调试
 
-```
+```bash
+# npm
 npm run start
+
+# pnpm
+pnpm dlx yarn start
 ```
 
 - 使用如下命令进行编译 & 打包
 
 **Linux/macOS**
 
-```
+```bash
+# npm
 npm run make
+
+# pnpm
+pnpm dlx yarn make
 ```
 
 **Windows**
 
-```
+```bash
+# npm
 npm run package
+
+# pnpm
+pnpm dlx yarn package
 ```
 
 ## 更多项目
